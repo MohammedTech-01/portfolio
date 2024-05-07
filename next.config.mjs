@@ -3,7 +3,7 @@ const nextConfig = {
   eslint: {
     ignoreDuringBuilds: true,
   },
-  ouput: "export",
+  output: "export",
   images: {
     loader: "custom",
     loaderFile: "./loader.js",
