@@ -6,6 +6,8 @@ import NavLink from "./navLink";
 import { motion } from "framer-motion";
 import github from "../../public/images/github.png";
 import linkedin from "../../public/images/linkedin.png";
+import Image from "next/image";
+
 
 
 const links = [
@@ -98,10 +100,10 @@ const navbar = () => {
       {/* SOCIALS */}
       <div className="hidden md:flex gap-4 w-1/3 justify-center">
         <Link href={"https://github.com/MohammedTech-01"} target="_blank">
-          <img src={github} alt="" width={24} height={24} />
+        <Image src={github} alt="" className="" width={24} height={24} />
         </Link>
         <Link href={"https://www.linkedin.com/in/mohammed-alluhaydan-2870a125b/"} target="_blank">
-          <img src={linkedin} alt="" width={24} height={24} />
+        <Image src={linkedin} alt="" className="" width={24} height={24} />
         </Link>
       </div>
       {/* {RESPONISVE MENU} */}
