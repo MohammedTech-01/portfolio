@@ -4,6 +4,9 @@ import Link from "next/link";
 import { useState } from "react";
 import NavLink from "./navLink";
 import { motion } from "framer-motion";
+import github from "../../public/images/github.png";
+import linkedin from "../../public/images/linkedin.png";
+
 
 const links = [
   { url: "/", title: "Home" },
@@ -95,10 +98,10 @@ const navbar = () => {
       {/* SOCIALS */}
       <div className="hidden md:flex gap-4 w-1/3 justify-center">
         <Link href={"https://github.com/MohammedTech-01"} target="_blank">
-          <img src="/github.png" alt="" width={24} height={24} />
+          <img src={github} alt="" width={24} height={24} />
         </Link>
-        <Link href={"https://github.com/MohammedTech-01"} target="_blank">
-          <img src="/linkedin.png" alt="" width={24} height={24} />
+        <Link href={"https://www.linkedin.com/in/mohammed-alluhaydan-2870a125b/"} target="_blank">
+          <img src={linkedin} alt="" width={24} height={24} />
         </Link>
       </div>
       {/* {RESPONISVE MENU} */}
