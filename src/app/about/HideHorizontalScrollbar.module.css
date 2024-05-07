@@ -1,0 +1,13 @@
+/* HideHorizontalScrollbar.module.css */
+
+.container {
+    overflow-x: scroll;  /* Enable horizontal scrolling */
+    scrollbar-width: none; /* Hide scrollbar for Firefox */
+
+    /* Hide scrollbar for WebKit browsers like Chrome and Safari */
+    -webkit-overflow-scrolling: touch; /* For smooth scrolling on touch devices */
+}
+
+.container::-webkit-scrollbar {
+    display: none; /* Hide scrollbar for WebKit browsers */
+}

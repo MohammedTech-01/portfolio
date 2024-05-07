@@ -1,0 +1,37 @@
+/* ScrollBarStyles.module.css */
+
+/* Hide the vertical scrollbar while still allowing scrolling */
+html.scrollbar {
+  overflow-y: scroll; /* Enable vertical scrolling */
+  overflow-x: auto;   /* Enable horizontal scrolling and automatically show scrollbar if needed */
+  scrollbar-width: none; /* Hide scrollbar for Firefox on the vertical axis */
+
+  /* For WebKit browsers like Chrome, Safari */
+  --scrollbarBG: rgba(255, 255, 255, 0.1);
+  --thumbBG: rgba(155, 155, 155, 0.5);
+}
+
+/* Hide vertical scrollbar for WebKit browsers */
+html.scrollbar::-webkit-scrollbar {
+  width: 0; /* Zero width for vertical scrollbar */
+  height: 0; /* Prevent possible horizontal scrollbar from hiding if not needed */
+}
+
+html.scrollbar::-webkit-scrollbar-track {
+  background: var(--scrollbarBG);
+}
+
+html.scrollbar::-webkit-scrollbar-thumb {
+  background-color: var(--thumbBG);
+  border-radius: 10px;
+  border: 3px solid transparent;
+}
+
+html.scrollbar::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(155, 155, 155, 0.8);
+}
+
+/* Ensure that horizontal scrollbar still appears */
+html.scrollbar::-webkit-scrollbar:horizontal {
+  height: auto; /* Reset height for horizontal scrollbar */
+}
