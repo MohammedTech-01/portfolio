@@ -4,24 +4,26 @@ import Image from "next/image";
 import Link from "next/link";
 import { useRef } from "react";
 import styles from '../../styles/ScrollBarStyles.module.css';
+import TodoList from "../../../public/images/TodoList.png";
+import DigitalClock from "../../../public/images/DigitalClock.png";
 
 
 const items = [
   {
     id: 1,
     color: "from-red-300 to-blue-300",
-    title: "React Commerce",
-    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores ab id ad nesciunt quo aut corporis modi? Voluptate, quos sunt dolorum facilis, id eum sequi placeat accusantium saepe eos laborum.",
-    img: "https://images.pexels.com/photos/18073372/pexels-photo-18073372/free-photo-of-young-man-sitting-in-a-car-on-a-night-street.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load",
-    link: "https://github.com/MohammedTech-01",
+    title: "Todo-list Website",
+    desc: "Efficiently manage daily tasks with this streamlined web application. Featuring easy task addition, edit and deletion, it offers a user-friendly interface ideal for enhancing productivity and organization.",
+    img: TodoList,
+    link: "https://mohammedtech-01.github.io/Todo-list-Website/",
   },
   {
     id: 2,
     color: "from-blue-300 to-violet-300",
-    title: "Next.js Medium Blog",
-    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores ab id ad nesciunt quo aut corporis modi? Voluptate, quos sunt dolorum facilis, id eum sequi placeat accusantium saepe eos laborum.",
-    img: "https://images.pexels.com/photos/18023772/pexels-photo-18023772/free-photo-of-close-up-of-a-person-holding-a-wristwatch.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load",
-    link: "https://github.com/MohammedTech-01",
+    title: "Digital Clock Website",
+    desc: "Accurately track time with this streamlined digital clock, featuring a minimalist design and user-friendly interface suitable for desktop and mobile use.",
+    img: DigitalClock,
+    link: "https://mohammedtech-01.github.io/Digital-Clock-Website/",
   },
 ];
 
@@ -37,7 +39,7 @@ const PortfolioPage = () => {
       initial={{ y: "-100vh" }}
       animate={{ y: "0%" }}
     >
-      <div className="h-[600vh] relative" ref={ref}>
+      <div className="h-[350vh] relative" ref={ref}>
         <div className="w-screen h-[calc(100vh-6rem)] flex items-center justify-center text-8xl text-center">
           My Works
         </div>
@@ -59,7 +61,7 @@ const PortfolioPage = () => {
                   <p className="w-80 md:w96 lg:w-[500px] lg:text-lg xl:w-[600px]">
                     {item.desc}
                   </p>
-                  <Link href={item.link} className="flex justify-end">
+                  <Link href={item.link} className="flex justify-end" target="_blank">
                     <button className="p-2 text-sm md:p-4 md:text-md 2xl:p-8 2xl:text-lg bg-white text-gray-600 font-semibold mb-6 rounded">
                       See Demo
                     </button>
