@@ -10,9 +10,9 @@ import TransitionProvider from "../components/transitionProvider";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "Portfolio App",
+  title: "Mohammed's Portfolio",
   description:
-    "The best animated portfolio app made with Next.js and Framer Motion!",
+    "Explore a dynamic showcase of my projects and skills in this animated portfolio.",
 };
 
 export default function RootLayout({ children }) {
