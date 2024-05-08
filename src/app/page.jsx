@@ -22,9 +22,9 @@ const Homepage = () => {
     >
       <div className="h-full flex flex-col lg:flex-row px-4 sm:px-8 md:px-12 lg:px-20 xl:px-48 2xl:text-xl">
         {/* IMAGE CONTAINER */}
-        <div className="h-1/2 lg:h-full lg:w-1/2 relative items-center">
+        <div className="h-1/2 lg:h-full lg:w-1/2 relative">
           <picture>
-            <Image src={hero} alt="" fill className="object-contain" />
+            <Image src={hero} alt="" fill className="object-contain object-left" />
           </picture>
         </div>
         {/* TEXT CONTAINER */}
