@@ -25,13 +25,21 @@ const items = [
     img: DigitalClock,
     link: "https://mohammedtech-01.github.io/Digital-Clock-Website/",
   },
+    {
+    id: 3,
+    color: "from-blue-300 to-violet-300",
+    title: "AI Hand Pose",
+    desc: `Utilizes TensorFlow's Handpose model for real-time hand landmark visualization in a React interface.`,
+    img: "https://ai.thestempedia.com/wp-content/uploads/elementor/thumbs/Hand-pose-classifier-icon-psfagpeszn8qvqvnpn5j7jxdyel0fyqr7aiwgtx9e8.png",
+    link: "https://mohammedtech-01.github.io/React-AI-Handpose/",
+  },
 ];
 
 const PortfolioPage = () => {
   const ref = useRef();
 
   const { scrollYProgress } = useScroll({ target: ref });
-  const x = useTransform(scrollYProgress, [0, 1], ["0%", "-65%"]);
+  const x = useTransform(scrollYProgress, [0, 1], ["0%", "-73%"]);
 
   return (
     <motion.div
