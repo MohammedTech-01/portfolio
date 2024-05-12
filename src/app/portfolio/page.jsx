@@ -19,7 +19,7 @@ const items = [
   },
   {
     id: 2,
-    color: "from-blue-300 to-violet-300",
+    color: "from-blue-300 to-blue-300",
     title: "Digital Clock Website",
     desc: "Accurately track time with this streamlined digital clock, featuring a minimalist design and user-friendly interface suitable for desktop and mobile use.",
     img: DigitalClock,
